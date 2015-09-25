@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Web Test1</title>
+	<script>
+	var currentIndex = 1;
+		window.onload = function ()
+		{
+			setInterval(function(){
+					var image =	document.getElementById('image');
+					image.src = "images/image"+ (currentIndex % 5)+ ".jpg";
+					currentIndex ++;
+				}, 2000);
+
+		};
+	</script>
+</head>
+<body>
+	<div style="height:200px; width:200px; margin:0 auto;">
+		<img id="image" src = "images/image0.jpg" width="200" height = "200">
+	</div>
+	
+</body>
+</html>
